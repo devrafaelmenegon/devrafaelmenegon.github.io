@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- 
+	
+	Author: Rafael Menegon
+	Year: 2022
+
+ -->
+
 <head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Menegon | Portifolio</title>
+    <title>Rafael Menegon | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="author" content="Rafael Menegon">
+    <meta name="keywords" content="Rafael Menegon, web designer, desenvolvedor, programador, front-end, back-end, fullstack, mobile, developer">
+    <meta name="description" content="Desenvolvedor Full-stack & UI/UX Designer">
+    <meta name="copyright" content="©2022 Rafael Menegon" />
     
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS
+    ================================================== -->
     <link rel="stylesheet" href="index.css">
+
+    <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- font awesome
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://kit.fontawesome.com/73da536d05.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <div class="root">
-        <nav>
+    <div class="root" id="home">
+
+        <!-- navbar-desktop
+        ================================================== -->
+        <nav class="container" id="navbar-desktop">
             <ul>
                 <li><a href="#sobremim" data-text="Sobre">Sobre</a></li>
                 <li><a href="#servicos" data-text="Serviços">Serviços</a></li>
                 <li><a href="#resumo" data-text="Resumo">Resumo</a></li>
-                <li><a href="#portifolio" data-text="Portifolio">Portifolio</a></li>
+                <li><a href="#portfolio" data-text="Portfolio">Portfolio</a></li>
                 <li><a href="#contato" data-text="Contato">Contato</a></li>
             </ul>
         </nav>
-        <section id="apresentacao">
+
+        <!-- navbar-burguer
+        ================================================== -->
+        <nav id="navbar-burguer" class="mobile">
+            <span style="font-size: 36px; color: white;">
+                <i class="fas fa-bars"></i>
+            </span>
+        </nav>
+
+        <!-- navbar-mobile
+        ================================================== -->
+        <nav id="navbar-mobile" class="mobile">
+            <ul>
+                <li>
+                    <a href="#servicos"><img src="images/icones/card_travel.svg" alt=""></a>
+                    <span>serviços</span>
+                </li>
+                <li>
+                    <a href="#portfolio"><img src="images/icones/personal_video.svg" alt=""></a>
+                    <span>portfolio</span>
+                </li>
+                <li>
+                    <a href="#contato"><img src="images/icones/phone.svg" alt=""></a>
+                    <span>contato</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- section apresentacao 
+        ================================================== -->
+        <section class="container" id="apresentacao">
             <div id="apresentacao-info">
                 <span>Olá, meu nome é</span>
                 <h1>Rafael Menegon</h1>
@@ -41,12 +101,17 @@
                     <li class="link-rede"><img src="images/github.svg"></img></li>
                 </ul>
             </div>
-
-            <img src="images/perfil.png" id="apresentacao-imagem"></img>
+            <div id="apresentacao-img">
+                <img src="images/perfil.png" id="apresentacao-imagem"></img>
+            </div>
         </section>
 
-        <section id="sobremim">
-            <img src="images/perfil-2.png" id="sobremim-imagem"></img>
+        <!-- section sobre mim 
+        ================================================== -->
+        <section class="container" id="sobremim">
+            <div id="sobremim-img">
+                <img src="images/sobremim3.png" id="sobremim-imagem"></img>
+            </div>
 
             <div id="sobremim-info">
                 <div id="sobremim-titulo">
@@ -67,7 +132,9 @@
             </div>
         </section>
 
-        <section id="servicos">
+        <!-- section serviços
+        ================================================== -->
+        <section class="container" id="servicos">
             <div id="servicos-cabecalho">
                 <h2>Meus Serviços</h2>
                 <span>O que eu posso fazer por você?</span>
@@ -90,12 +157,12 @@
                 </div>
                 <div class="card" id="card4">
                     <img src="images/github-red.svg" alt="">
-                    <span>Web Development</span>
+                    <span>Mobile Development</span>
                     <p>Landpage, sites pessoais ou comerciais, até lojas virtuais e sistemas complexos para internet.</p>
                 </div>
                 <div class="card" id="card5">
                     <img src="images/github-red.svg" alt="">
-                    <span>Web Development</span>
+                    <span>Ni Development</span>
                     <p>Landpage, sites pessoais ou comerciais, até lojas virtuais e sistemas complexos para internet.</p>
                 </div>
                 <div class="card" id="card6">
@@ -106,7 +173,9 @@
             </div>
         </section>
 
-        <section id="resumo">
+        <!-- section resumo
+        ================================================== -->
+        <section class="container" id="resumo">
             <div id="resumo-cabecalho">
                 <h2>Resumo</h2>
                 <span>Um pouco do que fiz até o momento no mundo da programação</span>
@@ -116,7 +185,6 @@
                 <div class="timeline-titulo">
                     <h3>Experiência Profissional</h3>
                 </div>
-    
                 <div class="timeline-bloco">
                     <div class="cabecalho">
                         <h3>Developer</h3>
@@ -130,7 +198,7 @@
                     </div>
                     <div class="descricao">
                         <h3>Freelancer</h3>
-                        <div class="divider"></div>
+                        
                         <p>
                             De forma independente, atuo com o desenvolvimento de software de ponta a ponta, desde o levantamento 
                             de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, 
@@ -145,7 +213,6 @@
                 <div class="timeline-titulo">
                     <h3>Educação</h3>
                 </div>
-    
                 <div class="timeline-bloco">
                     <div class="cabecalho">
                         <h3>Etec</h3>
@@ -159,7 +226,6 @@
                     </div>
                     <div class="descricao">
                         <h3>Técnico em Desenvolvimento de Sistemas</h3>
-                        <div class="divider"></div>
                         <p>
                             Linguagens de Programação (C, Java, PHP);<br>
                             Programação Orientada a Objetos (C#, Java);<br>
@@ -177,14 +243,16 @@
             </div>    
         </section>
 
-        <section id="portifolio">
-            <div id="portifolio-cabecalho">
-                <h2>Portifolio</h2>
+        <!-- section portfolio
+        ================================================== -->
+        <section class="container" id="portfolio">
+            <div id="portfolio-cabecalho">
+                <h2>Portfolio</h2>
                 <span>Alguns projetos que desenvolvi</span>
             </div>
-            <div id="portifolio-projetos">
+            <div id="portfolio-projetos">
                 <div class="projeto" id="projeto1">
-                    <img src="images/projetos/portifolio-pessoal.png" alt="">
+                    <img src="images/projetos/portfolio-pessoal.png" alt="">
                 </div>
                 <div class="projeto" id="projeto2">
                     <img src="images/projetos/smallib.png" alt="">
@@ -203,12 +271,12 @@
                 </div>
             </div>
         </section>
-        <section id="contato">
+        <section class="container" id="contato">
             <div id="contato-cabecalho">
                 <h2>Contato</h2>
                 <span>Como você pode me encontrar</span>
             </div>
-            <div id="contato-info">
+            <div id="contato-info" class="contato-container">
                 <div class="contato-card" id="contato-localizacao">
                     <img src="images/contatos/localização.png" alt="">
                     <span>Localização</span>
@@ -225,20 +293,8 @@
                     <p>(+55) 19 99874-0917</p>
                 </div>
             </div>
-            <div id="contato-info-2">
-                <div class="contato-card" id="contato-linkedin">
-                    <img src="images/contatos/linkedin.png" alt="">
-                    <span>LinkedIn</span>
-                    <p>linkedin.com/in/rafael-menegon</p>
-                </div>
-                <div class="contato-card" id="contato-github">
-                    <img src="images/contatos/github.png" alt="">
-                    <span>GitHub</span>
-                    <p>github.com/C0bal</p>
-                </div>
-            </div>
         </section>
-        <footer>
+        <footer class="container" id="page-footer">
             <div id="direitos-autorais">
                 <p>© Todos os Diretos Reservados - Rafael Menegon.</p>
                 <p>Designed by <span>dev.rafaelmenegon@gmail.com</span></p>

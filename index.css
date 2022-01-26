@@ -1,3 +1,48 @@
+/**
+ * =================================================================== 
+ *
+ *  Rafael Menegon Portfolio Styles
+ *  url: devrafaelmenegon.github.io
+ *  23-01-2022
+ *  ------------------------------------------------------------------
+ *  :
+ *  01. webfonts and iconfonts
+ *  02. base style overrides
+ *  03. typography & general theme styles
+ *  04. preloader
+ *  05. forms
+ *  06. buttons 
+ *  07. other components
+ *  08. common styles
+ *  09. header styles
+ *  10. intro
+ *  11. about
+ *  12. resume
+ *  13. portfolio
+ *  14. call-to-action section
+ *  15. services
+ *  16. stats
+ *  17. contact
+ *  18. footer
+ *
+ * =================================================================== 
+ */
+
+/** 
+ * ===================================================================
+ * 01. webfonts and iconfonts
+ *
+ * ------------------------------------------------------------------- 
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/** 
+* ===================================================================
+* 02. base style overrides
+*
+* ------------------------------------------------------------------- 
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -8,23 +53,27 @@
 }
 
 html {
-    scroll-behavior: smooth;
+	font-size: 16px;
 }
 
-::-webkit-scrollbar-track
-{
-	background-color: #0D1B2C;
+@media only screen and (max-width:1024px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 13px;
+	}
 }
 
-::-webkit-scrollbar
-{
-	width: 15px;
-	background-color: #000F21;
-}
-
-::-webkit-scrollbar-thumb
-{
-	background-color: #000f2179;
+html, body {
+	height: 100%;
 }
 
 body {
@@ -33,198 +82,431 @@ body {
     background-color: #000F21;
 }
 
+::-webkit-scrollbar-track {
+	background-color: #0D1B2C;
+}
+
+::-webkit-scrollbar {
+	width: 0.938rem;
+	background-color: #000F21;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #000f2179;
+}
+
 .root {
     /* width: 988px; */
     margin: 0 auto;
 }
 
-nav {
-    padding: 0 25%;
-    margin-top: 60px;
-}
-
-nav > ul {
-    list-style: none;
-    display: flex;
-}
-
-nav > ul > li {
-    font-size: 24px;
-    margin-right: 36px;
-    cursor: pointer;
-}
-
-nav > ul > li > a {
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    position: relative;
-    padding: 5px 10px;
-    color: transparent;
-    transition: 0.5s;
-}
-
-nav > ul > li > a:before, nav > ul > li > a:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px 0px;
-    color: #ffffff;
-    transition: 0.5s;
-    transition-delay: 0.2s;
-    box-sizing: border-box;
-}
-
-nav > ul > li > a:before {
-    c-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 53%);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 53%);
-}
-
-nav > ul > li > a:hover:before {
-    transform: translate(0, -3px);
-}
-
-nav > ul > li > a:after {
-    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
-    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
-}
-
-nav > ul > li > a:hover:after {
-    transform: translate(0, 3px);
-}
-
 span {
-    font-size: 24px;
-}
-
-h1 {
-    font-size: 54px;
-    font-weight: 700;
-    color: #FF6565;
-    white-space: nowrap;
+    font-size: 1.5rem;
 }
 
 h2 {
     color: #FF6565;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
 }
 
 button {
-    width: 232px;
-    height: 55px;
+    width: 14.5rem;
+    height: 3.438rem;
     display: block;
-    margin-top: 48px;
+    margin-top: 3rem;
     background-color: #FF6565;
     cursor: pointer;
 }
 
 button > span {
     font-family: Montserrat, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #ffffff;
 }
 
+.mobile {
+    display: none;
+}
+
+#navbar-desktop {
+    margin-top: 3.75rem;
+}
+
+#navbar-desktop > ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar-desktop > ul > li {
+    font-size: 1.5rem;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+#navbar-desktop > ul > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    position: relative;
+    padding: 0.313rem 0.625rem;
+    color: transparent;
+    transition: 0.5s;
+}
+
+#navbar-desktop > ul > li > a:before, nav > ul > li > a:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.313rem 0rem;
+    color: #ffffff;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    box-sizing: border-box;
+}
+
+#navbar-desktop > ul > li > a:before {
+    -webkit-appearance: polygon(0 0, 100% 0, 100% 50%, 0 53%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 53%);
+}
+
+#navbar-desktop > ul > li > a:hover:before {
+    transform: translate(0, -0.188rem);
+}
+
+#navbar-desktop > ul > li > a:after {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+#navbar-desktop > ul > li > a:hover:after {
+    transform: translate(0, 0.188rem);
+}
+
+/**
+ * responsive:
+ * navbar
+ * ------------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1440px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+    
+}
+
+@media only screen and (max-width:768px) {
+    #navbar-desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+    #navbar-mobile {
+        z-index: 99;
+        display: flex;
+        height: 8rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #0D1B2C;
+    }
+
+    #navbar-mobile > ul {
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #navbar-mobile > ul > li {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    #navbar-mobile > ul > li > span {
+        color: #37495F;
+    }
+
+    #navbar-mobile img {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    #navbar-burguer {
+        margin-top: 3.75rem;
+        width: 100%;
+        height: 3.75rem;
+        justify-content: end;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        padding-right: 10vw;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+/** 
+ * ===================================================================
+ * 12. apresentacao
+ *
+ * ------------------------------------------------------------------- 
+ */
+
 #apresentacao {
-    padding: 120px 25%;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+}
+
+#apresentacao-img {
+    vertical-align: center;
+}
+
+#apresentacao-img > img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center; 
 }
 
 #apresentacao-info {
-    margin-top: 60px;
+    margin-top: 3.75rem;
+}
+
+#apresentacao-info > span:first-child {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+#apresentacao-info > h1 {
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #FF6565;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
 }
 
 .redes-sociais {
     display: flex;
-    margin-top: 36px;
+    margin-top: 2.25rem;
     align-items: center;
 }
 
 .redes-sociais > li {
-    margin-right: 16px;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
+/**
+ * responsive:
+ * apresentacao
+ * ------------------------------------------------------------------- 
+ */
+@media only screen and (max-width:1440px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+    #apresentacao-info {
+        margin-top: 0rem;
+    }
+
+    #apresentacao-info > h1 {
+        white-space: normal;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #apresentacao {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+        grid-template-columns: 1fr;
+    }
+    
+    #apresentacao-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+
+/** 
+ * ===================================================================
+ * 12. sobre mim
+ *
+ * ------------------------------------------------------------------- 
+ */
+
 #sobremim {
     background-color: #000B19;
-    padding: 120px 25%;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
 
-#sobremim-titulo {
-    margin-bottom: 40px;
+#sobremim-img > img {
+    max-width: 90%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center; 
 }
+
+#sobremim-titulo {
+    margin-bottom: 2.5rem;
+}
+
+/**
+ * responsive:
+ * sobre mim
+ * ------------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1440px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width:768px) {
+    #sobremim {
+        grid-template-columns: 1fr;
+    }
+
+    #sobremim-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+
+/** 
+ * ===================================================================
+ * 12. meus servicos
+ *
+ * ------------------------------------------------------------------- 
+ */
 
 #servicos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 25% 120px 25%;
+    padding-top: 3.75rem;
+    padding-bottom: 7.5rem;
 }
 
 #servicos > #servicos-cabecalho {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     text-align: center;
 }
 
 #servicos > #servicos-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 290px);
-    gap: 10px;
+    gap: 1rem;
 }
 
 #servicos-cards > .card {
     display: grid;
     background-color: #0D1B2C;
-    padding: 40px 32px 24px 24px;
+    padding: 2.5rem 2rem 1.5rem 1.5rem;
 }
 
 #servicos-cards > .card > img {
-    
+    margin-bottom: 0.5rem;
 }
 
 #servicos-cards > .card > span {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 #servicos-cards > .card > p {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
+/**
+ * responsive:
+ * meus servicos
+ * ------------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1440px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width:768px) {
+    #servicos > #servicos-cards {
+        grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+
+/** 
+ * ===================================================================
+ * 12.resumo
+ *
+ * ------------------------------------------------------------------- 
+ */
+
 #resumo {
-    padding: 60px 25%;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     background-color: #000B19;
 }
 
 #resumo-cabecalho {
     text-align: center;
-    margin-bottom: 116px;
+    margin-bottom: 7.25rem;
 }
 
 .timeline-container:not(:first-child) {
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .timeline-container h3{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .timeline-titulo {
     margin-left: 30%;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .timeline-titulo > h3{
@@ -236,9 +518,13 @@ button > span {
     grid-template-columns: 2fr 2fr 6fr 2fr;
 }
 
+.timeline-bloco > .cabecalho {
+    text-align: right;
+}
+
 .timeline-bloco > .cabecalho > span {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     opacity: 80%;
 }
 
@@ -252,73 +538,212 @@ button > span {
     width: fit-content;
     background-color: #ffffff;
     border-radius: 100%;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .timeline-bloco > .linha > .linha-icone {
     height: 100%;
-    width: 1px;
+    width: 2px;
     background-color: #ffffff;
     opacity: 80%;
 }
 
-.timeline-bloco > .descricao > .divider {
-    margin-top: 16px;
-    margin-bottom: 40px;
+.timeline-bloco > .descricao > h3::after {
+    content: '';
     width: 50px;
     height: 3px;
-    background-color: #c4c4c4;
+    background-color: #FF6565;
+    display: block;
+    margin: 1rem 0;
 }
 
 .timeline-bloco > .descricao > p {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
-#portifolio {
+/**
+ * responsive:
+ * resumo
+ * ------------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1920px) {
+
+}
+
+@media only screen and (max-width:1440px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+    .timeline-bloco {
+        grid-template-columns: 2fr 2fr 6fr 1fr;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .timeline-titulo {
+        margin-left: 0;
+    }
+
+    .timeline-bloco {
+        grid-template-columns: 2fr 8fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "timeline head"
+                             "timeline main";
+        gap: 0.625rem;
+    }
+
+    .timeline-bloco > .linha {
+        grid-area: timeline;
+    }
+
+    .timeline-bloco > .cabecalho {
+        grid-area: head;
+        text-align: left;
+    }
+    
+    .timeline-bloco > .descricao {
+        grid-area: main;
+    }
+
+    .timeline-bloco > .descricao > p {
+        margin-top: 1rem;
+    }
+
+    .timeline-bloco > .descricao > h3::after {
+        display: none;
+    }
+
+    .timeline-bloco > .descricao > h3::before {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background-color: #FF6565;
+        display: block;
+        margin: 1rem 0;
+    }
+    
+    .timeline-bloco > .linha > .icone {
+        max-width: 3rem;
+        max-height: 3rem;
+        background-color: #ffffff;
+        border-radius: 100%;
+        padding: 0.5rem;
+    }
+
+    .timeline-bloco > .linha > .icone > img {
+        max-width: 100%;
+    }
+    
+    .timeline-bloco > .linha > .linha-icone {
+        height: 100%;
+        width: 2px;
+        background-color: #ffffff;
+        opacity: 80%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+
+/** 
+ * ===================================================================
+ * 12. portfolio
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 25% 120px 25%;
+    padding-top: 3.75rem;
+    padding-bottom: 7.5rem;
 }
 
-#portifolio-cabecalho {
+#portfolio-cabecalho {
     text-align: center;
 }
 
-#portifolio-projetos {
-    justify-content: center;
-    padding: 120px 0;
+#portfolio-projetos {
+    max-width: 100%;
+    align-self: center;
+    padding: 7.5rem 0;
     display: grid;
-    grid-template-columns: repeat(2, 490px);
-    grid-template-rows: repeat(3, 600px);
-    gap: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(30.875rem, 1fr));
+    grid-auto-rows: auto;
 }
 
-#portifolio-projetos > .projeto {
+#portfolio-projetos > .projeto {
     cursor: pointer;
     overflow: hidden;
 }
 
-#portifolio-projetos > .projeto:hover {
+#portfolio-projetos > .projeto:hover {
    opacity: 75%;
    transition: 0.5s;
 }
 
+#portfolio-projetos > .projeto img {
+    max-width: 100%;
+}
+
+/**
+ * responsive:
+ * portfolio
+ * ------------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1440px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width:768px) {
+    #portfolio-projetos {
+        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+
+/** 
+ * ===================================================================
+ * 12. contato
+ *
+ * ------------------------------------------------------------------- 
+ */
+
 #contato {
-    padding: 60px 25% 60px 25%;
     background-color: #000B19;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
 }
 
 #contato-cabecalho {
     text-align: center;
 }
 
+.contato-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 #contato-info {
     justify-content: center;
-    padding-top: 120px;
+    align-self: center;
+    padding-top: 7.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 18.75rem));
+    gap: 3%;
 }
 
 .contato-card {
@@ -330,32 +755,25 @@ button > span {
 
 .contato-card > img {
     max-height: 160px;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .contato-card > span {
     color: #FF6565;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .contato-card > p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
-#contato-info-2 {
-    justify-content: center;
-    padding-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-footer {
-    padding: 0 25% 60px 25%;
+#page-footer {
+    padding-top: 0;
+    padding-bottom: 3.75rem;
     background-color: #000B19;
     display: flex;
     justify-content: space-between;
@@ -363,14 +781,91 @@ footer {
 }
 
 #direitos-autorais p {
-   font-size: 14px;
-   line-height: 20px;
+   font-size: 0.875rem;
+   line-height: 1.25rem;
    color: #CFD1D5;
 }
 
 #direitos-autorais span {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     color: #ffffff;
  }
+
+ /**
+ * responsive:
+ * portfolio
+ * ------------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1440px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width:768px) {
+    #page-footer {
+        padding-bottom: 11.75rem;
+        background-color: #000B19;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+
+/* MEDIA QUERIES -------------*/
+
+@media (max-width: 2560px) {
+    .container {
+        padding: 0 31.25rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    .container {
+        padding: 0 18.75rem;
+    }
+}
+
+@media (max-width: 1536px) {  
+    .container {
+        padding: 0 12.5rem;
+    }
+}
+
+@media (max-width: 1440px) {  
+    .container {
+        padding: 0 6.25rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 3.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 3.125rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 1.563rem;
+    }
+}
+
+
+
+
 
