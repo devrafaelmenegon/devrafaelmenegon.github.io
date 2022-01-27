@@ -110,21 +110,6 @@ h2 {
     font-weight: 700;
 }
 
-button {
-    width: 14.5rem;
-    height: 3.438rem;
-    display: block;
-    margin-top: 3rem;
-    background-color: #FF6565;
-    cursor: pointer;
-}
-
-button > span {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.125rem;
-    color: #ffffff;
-}
-
 .mobile {
     display: none;
 }
@@ -207,7 +192,7 @@ button > span {
         display: flex;
     }
 
-    #navbar-mobile {
+    #navbar-mobile-bottom {
         z-index: 99;
         display: flex;
         height: 8rem;
@@ -218,7 +203,7 @@ button > span {
         background-color: #0D1B2C;
     }
 
-    #navbar-mobile > ul {
+    #navbar-mobile-bottom > ul {
         width: 100%;
         justify-content: center;
         align-self: center;
@@ -227,31 +212,20 @@ button > span {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    #navbar-mobile > ul > li {
+    #navbar-mobile-bottom > ul > li {
         display: flex;
         flex-direction: column;
         justify-self: center;
         align-items: center;
     }
 
-    #navbar-mobile > ul > li > span {
+    #navbar-mobile-bottom > ul > li > span {
         color: #37495F;
     }
 
-    #navbar-mobile img {
+    #navbar-mobile-bottom img {
         width: 2.25rem;
         height: 2.25rem;
-    }
-
-    #navbar-burguer {
-        margin-top: 3.75rem;
-        width: 100%;
-        height: 3.75rem;
-        justify-content: end;
-        align-items: center;
-        display: flex;
-        position: fixed;
-        padding-right: 10vw;
     }
 }
 
@@ -267,7 +241,7 @@ button > span {
  */
 
 #apresentacao {
-    padding-top: 7.5rem;
+    margin-top: 7.5rem;
     padding-bottom: 7.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -300,6 +274,21 @@ button > span {
     color: #FF6565;
     white-space: nowrap;
     margin-bottom: 0.5rem;
+}
+
+.page-button {
+    width: 14.5rem;
+    height: 3.438rem;
+    display: block;
+    margin-top: 3rem;
+    background-color: #FF6565;
+    cursor: pointer;
+}
+
+.page-button > span {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.125rem;
+    color: #ffffff;
 }
 
 .redes-sociais {
