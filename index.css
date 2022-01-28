@@ -193,21 +193,23 @@ h2 {
     }
 
     #navbar-mobile-bottom {
+        border-radius: 2rem 2rem 0 0;
         z-index: 99;
         display: flex;
-        height: 8rem;
+        height: 5rem;
         width: 100%;
         position: fixed;
         bottom: 0;
         left: 0;
         background-color: #0D1B2C;
+        box-shadow: 0px -6px 15px 3px rgba(0,0,0, 0.1);
     }
 
     #navbar-mobile-bottom > ul {
         width: 100%;
         justify-content: center;
         align-self: center;
-        margin: 0 auto;
+        margin-top: 0.5rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -285,7 +287,8 @@ h2 {
     cursor: pointer;
 }
 
-.page-button > span {
+.page-button > a {
+    text-decoration: none;
     font-family: Montserrat, sans-serif;
     font-size: 1.125rem;
     color: #ffffff;
@@ -323,7 +326,8 @@ h2 {
 
 @media only screen and (max-width:768px) {
     #apresentacao {
-        padding-top: 7.5rem;
+        height: calc(100vh - 8rem);
+        padding-top: 1rem;
         padding-bottom: 7.5rem;
         grid-template-columns: 1fr;
     }
