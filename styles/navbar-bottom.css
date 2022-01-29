@@ -1,0 +1,8 @@
+#navbar-mobile-bottom svg {
+    --off: #37495F;
+    --on: rgba(255, 255, 255, 0.75);
+}
+
+#navbar-mobile-bottom .svg-internal {
+    transition: all 0.5s ease-out;
+}

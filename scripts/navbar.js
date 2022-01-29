@@ -6,3 +6,4 @@ burger.addEventListener('click', function(e){
 	this.classList.toggle('is-open');
 	nav.classList.toggle('is-open');
 });
+

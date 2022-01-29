@@ -30,9 +30,10 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/navbar-bottom.css">
+    <link rel="stylesheet" href="styles/loader.css">
 
     <!-- favicons
 	================================================== -->
@@ -93,18 +94,31 @@
         <nav id="navbar-mobile-bottom" class="mobile">
             <ul>
                 <li>
-                    <a href="#servicos">
-                        <img src="images/icones/card_travel.svg" alt="">
+                    <a href="#home" id="btn-home">
+                        <svg id="svg-home" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="svg-internal" id="svg-home-internal" d="M12 5.9C13.16 5.9 14.1 6.84 14.1 8C14.1 9.16 13.16 10.1 12 10.1C10.84 10.1 9.9 9.16 9.9 8C9.9 6.84 10.84 5.9 12 5.9ZM12 14.9C14.97 14.9 18.1 16.36 18.1 17V18.1H5.9V17C5.9 16.36 9.03 14.9 12 14.9ZM12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4ZM12 13C9.33 13 4 14.34 4 17V20H20V17C20 14.34 14.67 13 12 13Z" fill="var(--on)"/>
+                        </svg> 
                     </a>
                 </li>
                 <li>
-                    <a href="#portfolio">
-                        <img src="images/icones/personal_video.svg" alt="">
+                    <a href="#servicos" id="btn-services">
+                        <svg id="svg-services" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="svg-internal" id="svg-services-internal" d="M20 6H17V4C17 2.89 16.11 2 15 2H9C7.89 2 7 2.89 7 4V6H4C2.89 6 2 6.89 2 8V19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM9 4H15V6H9V4ZM20 19H4V17H20V19ZM20 14H4V8H7V10H9V8H15V10H17V8H20V14Z" fill="var(--off)"/>
+                        </svg>  
                     </a>
                 </li>
                 <li>
-                    <a href="#contato">
-                        <img src="images/icones/phone.svg" alt="">
+                    <a href="#portfolio" id="btn-portfolio">
+                        <svg id="svg-portfolio" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="svg-internal" id="svg-portfolio-internal" d="M21 3H3C1.89 3 1 3.89 1 5V17C1 18.1 1.89 19 3 19H8V21H16V19H21C22.1 19 22.99 18.1 22.99 17L23 5C23 3.89 22.1 3 21 3ZM21 17H3V5H21V17Z" fill="var(--off)"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contato" id="btn-contact">
+                        <svg id="svg-contact" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="svg-internal" id="svg-contact-internal" d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="var(--off)"/>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -549,8 +563,9 @@
 
     </div><!--/loader-->
 
-    <script src="navbar.js"></script>
-    <script src="loader.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/navbar-bottom.js"></script>
+    <script src="scripts/loader.js"></script>
 </body>
 
 </html>
