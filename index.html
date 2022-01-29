@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <!-- 
 	
@@ -16,11 +16,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rafael Menegon | Portfolio</title>
 
+    <!-- metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Menegon">
     <meta name="keywords" content="Rafael Menegon, web designer, desenvolvedor, programador, front-end, back-end, fullstack, mobile, developer">
     <meta name="description" content="Desenvolvedor Full-stack & UI/UX Designer">
     <meta name="copyright" content="©2022 Rafael Menegon" />
-    
+
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,17 +32,19 @@
     ================================================== -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="loader.css">
 
     <!-- favicons
 	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- font awesome
 	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://kit.fontawesome.com/73da536d05.js" crossorigin="anonymous"></script>
-    
+
 </head>
+
 <body>
     <div class="root" id="home">
 
@@ -82,21 +87,25 @@
                 </ul>
             </nav>
         </div>
+
         <!-- navbar-mobile-bottom
         ================================================== -->
         <nav id="navbar-mobile-bottom" class="mobile">
             <ul>
                 <li>
-                    <a href="#servicos"><img src="images/icones/card_travel.svg" alt=""></a>
-                    <!-- <span>serviços</span> -->
+                    <a href="#servicos">
+                        <img src="images/icones/card_travel.svg" alt="">
+                    </a>
                 </li>
                 <li>
-                    <a href="#portfolio"><img src="images/icones/personal_video.svg" alt=""></a>
-                    <!-- <span>portfolio</span> -->
+                    <a href="#portfolio">
+                        <img src="images/icones/personal_video.svg" alt="">
+                    </a>
                 </li>
                 <li>
-                    <a href="#contato"><img src="images/icones/phone.svg" alt=""></a>
-                    <!-- <span>contato</span> -->
+                    <a href="#contato">
+                        <img src="images/icones/phone.svg" alt="">
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -104,31 +113,57 @@
         <!-- section apresentacao 
         ================================================== -->
         <section class="container" id="apresentacao">
+            
             <div id="apresentacao-info">
+
                 <span>Olá, meu nome é</span>
                 <h1>Rafael Menegon</h1>
                 <span>Eu estudo e desenvolvo <br> o que for preciso...</span>
-            
+
                 <button class="page-button">
                     <a href="#contato">Vamos Conversar!</a>
                 </button>
 
                 <ul class="redes-sociais">
-                    <li class="link-rede"><a href="https://www.facebook.com/rafael.menegon.77/"><img src="images/facebook.svg"></img></a></li>
-                    <li class="link-rede"><a href="https://www.instagram.com/rafael.menegon/"><img src="images/instagram.svg"></img></a></li>
-                    <li class="link-rede"><a href="https://www.linkedin.com/in/rafael-menegon/"><img src="images/linkedin.svg"></img></a></li>
-                    <li class="link-rede"><a href="https://medium.com/@dev.rafaelmenegon"><img src="images/medium.svg"></img></a></li>
-                    <li class="link-rede"><a href="https://github.com/c0bal"><img src="images/github.svg"></img></a></li>
+                    <li class="link-rede">
+                        <a href="https://www.facebook.com/rafael.menegon.77/">
+                            <img src="images/facebook.svg"></img>
+                        </a>
+                    </li>
+                    <li class="link-rede">
+                        <a href="https://www.instagram.com/rafael.menegon/">
+                            <img src="images/instagram.svg"></img>
+                        </a>
+                    </li>
+                    <li class="link-rede">
+                        <a href="https://www.linkedin.com/in/rafael-menegon/">
+                            <img src="images/linkedin.svg"></img>
+                        </a>
+                    </li>
+                    <li class="link-rede">
+                        <a href="https://medium.com/@dev.rafaelmenegon">
+                            <img src="images/medium.svg"></img>
+                        </a>
+                    </li>
+                    <li class="link-rede">
+                        <a href="https://github.com/c0bal">
+                            <img src="images/github.svg"></img>
+                        </a>
+                    </li>
                 </ul>
+
             </div>
+
             <div id="apresentacao-img">
                 <img src="images/perfil.png" id="apresentacao-imagem"></img>
             </div>
-        </section>
 
-        <!-- section sobre mim 
+        </section><!--/apresentacao-->
+
+        <!-- section sobremim 
         ================================================== -->
         <section class="container" id="sobremim">
+
             <div id="sobremim-img">
                 <img src="images/sobremim3.png" id="sobremim-imagem"></img>
             </div>
@@ -137,112 +172,166 @@
                 <div id="sobremim-titulo">
                     <h2>Sobre Mim</h2>
                 </div>
+                
                 <p>
-                    Sou um desenvolvedor júnior. Tenho uma grande paixão pela criação de interfaces 
-                    agradáveis e intuitivas. Algo que me incentiva a cada dia, são os desafios lógicos e interpretativos que encontro durante a contrução de um projeto. <br><br>
-                    Proativo, detalhista, independente e colaborativo. Interessado em todo o espectro de front e back-end, até o momento trabalhando em projetos pessoais e de 
+                    Sou um desenvolvedor júnior. Tenho uma grande paixão pela criação de interfaces
+                    agradáveis e intuitivas. Algo que me incentiva a cada dia, são os desafios lógicos e interpretativos
+                    que encontro durante a contrução de um projeto. <br><br>
+                    Proativo, detalhista, independente e colaborativo. Interessado em todo o espectro de front e
+                    back-end, até o momento trabalhando em projetos pessoais e de
                     freelance. Ansioso por novas oportunidades.<br><br>
-                    Amigos, família, música e jogos eletrônicos, são coisas muito importantes para mim e que sempre mantenho por perto.
-                    
+                    Amigos, família, música e jogos eletrônicos, são coisas muito importantes para mim e que sempre
+                    mantenho por perto.
                 </p>
+
                 <button class="page-button">
                     <a>Baixar Currículo</a>
                 </button>
             </div>
-        </section>
+
+        </section><!--/sobremim-->
 
         <!-- section serviços
         ================================================== -->
         <section class="container" id="servicos">
+
             <div id="servicos-cabecalho">
                 <h2>Meus Serviços</h2>
                 <span>O que eu posso fazer por você?</span>
             </div>
+
+            <!-- cards -->
             <div id="servicos-cards">
-                <div class="card" id="card1">
+                
+                <!-- card 01 -->
+                <div class="card">
                     <img src="images/github-red.svg" alt="">
-                    <span>Web Development</span>
-                    <p>Landpage, sites pessoais ou comerciais, até lojas virtuais e sistemas complexos para internet.</p>
+                    <span>Aplicação Web</span>
+                    <p>Desde uma simples landpage, sites pessoais ou comercial, até lojas virtuais e sistemas complexos
+                        para internet.</p>
                 </div>
-                <div class="card" id="card2">
-                    <img src="images/paint.svg" alt="">
-                    <span>UI & UX Design</span>
-                    <p>Aplicações modernas que focam soluções no ponto de vista do usuário.</p>
+
+                <!-- card 02 -->
+                <div class="card">
+                    <img src="images/github-red.svg" alt="">
+                    <span>Aplicação Mobile</span>
+                    <p>Aplicações híbridas ou nativas em multiplataformas para dispositivos móveis com Android ou iOS,
+                        disponibilizando em suas respectivas lojas e extraindo o seu instalador.</p>
                 </div>
-                <div class="card" id="card3">
+
+                <!-- card 03 -->
+                <div class="card">
                     <img src="images/computer.svg" alt="">
-                    <span>Desktop Development</span>
-                    <p>Aplicações para sistemas operacionais onde o usuário necessita instalar o software em sua máquina.</p>
+                    <span>Aplicação Desktop</span>
+                    <p>Aplicações multiplataformas exclusivas, para sistemas operacionais Windows, Linux e Mac OS, onde
+                        o usuário necessita instalar o software em sua máquina.</p>
                 </div>
-                <div class="card" id="card4">
+                
+                <!-- card 04 -->
+                <div class="card">
                     <img src="images/github-red.svg" alt="">
-                    <span>Mobile Development</span>
-                    <p>Landpage, sites pessoais ou comerciais, até lojas virtuais e sistemas complexos para internet.</p>
+                    <span>Sistemas Integrados</span>
+                    <p>Envolve o desenvolvimento multiplataformas, onde dispositivos diferentes se comunicam e trabalham
+                        em sincronia através da internet.</p>
                 </div>
-                <div class="card" id="card5">
+                
+                <!-- card 05 -->
+                <div class="card">
+                    <img src="images/paint.svg" alt="">
+                    <span>UI/UX Design</span>
+                    <p>A experiência do usuário e a análise interativa com a aplicação é um diferencial para as
+                        aplicações modernas que focam soluções no ponto de vista do usuário.</p>
+                </div>
+
+                <!-- card 06 -->
+                <div class="card">
                     <img src="images/github-red.svg" alt="">
-                    <span>Ni Development</span>
-                    <p>Landpage, sites pessoais ou comerciais, até lojas virtuais e sistemas complexos para internet.</p>
+                    <span>Design Gráfico</span>
+                    <p>Essencial para o marketing Digital, uma arte gráfica pode fazer toda a diferença para o seu
+                        negócio. Panfletos, flyers, convites, banners, avatars, entre outras. </p>
                 </div>
-                <div class="card" id="card6">
-                    <img src="images/github-red.svg" alt="">
-                    <span>Web Development</span>
-                    <p>Landpage, sites pessoais ou comerciais, até lojas virtuais e sistemas complexos para internet.</p>
-                </div>
-            </div>
-        </section>
+
+            </div><!-- /cards -->
+
+        </section><!--/servicos-->
 
         <!-- section resumo
         ================================================== -->
         <section class="container" id="resumo">
+
             <div id="resumo-cabecalho">
                 <h2>Resumo</h2>
                 <span>Um pouco do que fiz até o momento no mundo da programação</span>
             </div>
-            
+
+            <!-- timeline-container -->
             <div class="timeline-container">
+
+                <!-- timeline-titulo -->
                 <div class="timeline-titulo">
                     <h3>Experiência Profissional</h3>
                 </div>
+
+                <!-- timeline-bloco -->
                 <div class="timeline-bloco">
+
+                    <!-- cabecalho-->
                     <div class="cabecalho">
                         <h3>Developer</h3>
                         <span>2020 - Presente</span>
                     </div>
+
+                    <!-- linha -->
                     <div class="linha">
                         <div class="icone">
                             <img src="images/briefcase.svg" alt="">
                         </div>
                         <div class="linha-icone"></div>
                     </div>
+
+                    <!-- descricao-->
                     <div class="descricao">
                         <h3>Freelancer</h3>
-                        
                         <p>
-                            De forma independente, atuo com o desenvolvimento de software de ponta a ponta, desde o levantamento 
-                            de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, 
-                            testes, documentação, implementação, até a apresentação para o cliente final, utilizando linguagens fortes no mercado, 
+                            De forma independente, atuo com o desenvolvimento de software de ponta a ponta, desde o
+                            levantamento
+                            de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do
+                            cliente e servidor,
+                            testes, documentação, implementação, até a apresentação para o cliente final, utilizando
+                            linguagens fortes no mercado,
                             sempre atualizado e a nível de exigência internacional, trabalhando com metodologias ágeis.
                         </p>
                     </div>
-                </div>
-            </div>
 
+                </div><!-- /timeline-bloco -->
+            </div><!-- /timeline-container -->
+
+             <!-- timeline-container -->
             <div class="timeline-container">
+
+                <!-- timeline-titulo -->
                 <div class="timeline-titulo">
                     <h3>Educação</h3>
                 </div>
+
+                <!-- timeline-bloco -->
                 <div class="timeline-bloco">
+
+                    <!-- cabecalho -->
                     <div class="cabecalho">
                         <h3>Etec</h3>
                         <span>2019 - 2021</span>
                     </div>
+
+                    <!-- linha -->
                     <div class="linha">
                         <div class="icone">
                             <img src="images/briefcase.svg" alt="">
                         </div>
                         <div class="linha-icone"></div>
                     </div>
+
+                    <!-- descricao -->
                     <div class="descricao">
                         <h3>Técnico em Desenvolvimento de Sistemas</h3>
                         <p>
@@ -255,79 +344,213 @@
                             Banco de dados (Sql Server, MySql);<br>
                             Fundamentos de Hardware e de Redes;<br>
                             Sistemas Embarcados (Tinkercad);<br>
-                            Análise e Desenvolvimento de Sistemas;<br> 
+                            Análise e Desenvolvimento de Sistemas;<br>
                         </p>
                     </div>
-                </div>
-            </div>    
-        </section>
+
+                </div><!-- /timeline-bloco -->
+            </div><!-- /timeline-container -->
+
+        </section><!--/resumo-->
 
         <!-- section portfolio
         ================================================== -->
         <section class="container" id="portfolio">
+
+            <!-- portfolio-cabecalho -->
             <div id="portfolio-cabecalho">
                 <h2>Portfolio</h2>
                 <span>Alguns projetos que desenvolvi</span>
             </div>
+
+            <!-- portfolio-projetos -->
             <div id="portfolio-projetos">
-                <div class="projeto" id="projeto1">
-                    <img src="images/projetos/portfolio-pessoal.png" alt="">
+
+                <!-- projeto 01 -->
+                <div class="projeto">
+                    <a href="https://github.com/devrafaelmenegon/devrafaelmenegon.github.io">
+                        <img src="images/projetos/portfolio-pessoal.png" alt="">
+                    </a>
                 </div>
-                <div class="projeto" id="projeto2">
-                    <img src="images/projetos/smallib.png" alt="">
+
+                <!-- projeto 02 -->
+                <div class="projeto">
+                    <a href="https://github.com/C0bal/csharp-smallib">
+                        <img src="images/projetos/smallib.png" alt="">
+                    </a>
                 </div>
-                <div class="projeto" id="projeto3">
-                    <img src="images/projetos/vruum.png" alt="">
+
+                <!-- projeto 03 -->
+                <div class="projeto">
+                    <a href="https://vruum-react.vercel.app/">
+                        <img src="images/projetos/vruum.png" alt="">
+                    </a>
                 </div>
-                <div class="projeto" id="projeto4">
-                    <img src="images/projetos/levitate.png" alt="">
+
+                <!-- projeto 04 -->
+                <div class="projeto">
+                    <a href="https://github.com/devrafaelmenegon/devrafaelmenegon.github.io">
+                        <img src="images/projetos/levitate.png" alt="">
+                    </a>
                 </div>
-                <div class="projeto" id="projeto5">
-                    <img src="images/projetos/moveit.png" alt="">
+
+                <!-- projeto 05 -->
+                <div class="projeto">
+                    <a href="https://github.com/devrafaelmenegon/devrafaelmenegon.github.io">
+                        <img src="images/projetos/moveit.png" alt="">
+                    </a>
                 </div>
-                <div class="projeto" id="projeto6">
-                    <img src="images/projetos/podcastr.png" alt="">
+
+                <!-- projeto 06 -->
+                <div class="projeto">
+                    <a href="https://github.com/devrafaelmenegon/devrafaelmenegon.github.io">
+                        <img src="images/projetos/podcastr.png" alt="">
+                    </a>
                 </div>
-            </div>
-        </section>
+
+            </div><!-- /portfolio-projetos -->
+
+        </section><!--/portfolio-->
+
+        <!-- section contato
+        ================================================== -->
         <section class="container" id="contato">
+
+            <!-- contato-cabecalho -->
             <div id="contato-cabecalho">
                 <h2>Contato</h2>
                 <span>Como você pode me encontrar</span>
             </div>
+
+            <!-- contato-info-->
             <div id="contato-info" class="contato-container">
+
                 <div class="contato-card" id="contato-localizacao">
                     <img src="images/contatos/localização.png" alt="">
                     <span>Localização</span>
                     <p>Jaguariúna, SP - Brasil</p>
                 </div>
+
                 <div class="contato-card" id="contato-email">
                     <img src="images/contatos/email.png" alt="">
                     <span>Me envie um E-mail</span>
                     <p>dev.rafaelmenegon@gmail.com</p>
                 </div>
+
                 <div class="contato-card" id="contato-celular">
                     <img src="images/contatos/numero.png" alt="">
                     <span>Chamada ou Whatsapp</span>
                     <p>(+55) 19 99874-0917</p>
                 </div>
             </div>
-        </section>
+
+        </section><!--/contato-->
+
+        <!-- footer
+        ================================================== -->
         <footer class="container" id="page-footer">
+
+            <!-- direitos-autorais -->
             <div id="direitos-autorais">
                 <p>© Todos os Diretos Reservados - Rafael Menegon.</p>
                 <p>Designed by <span>dev.rafaelmenegon@gmail.com</span></p>
             </div>
+
+            <!-- redes-sociais -->
             <ul class="redes-sociais">
-                <li class="link-rede"><a href="https://www.facebook.com/rafael.menegon.77/"><img src="images/facebook.svg"></img></a></li>
-                <li class="link-rede"><img src="images/instagram.svg"></img></li>
-                <li class="link-rede"><img src="images/linkedin.svg"></img></li>
-                <li class="link-rede"><img src="images/medium.svg"></img></li>
-                <li class="link-rede"><img src="images/github.svg"></img></li>
+                <li class="link-rede">
+                    <a href="https://www.facebook.com/rafael.menegon.77/">
+                        <img src="images/facebook.svg"></img>
+                    </a>
+                </li>
+                <li class="link-rede">
+                    <a href="https://www.instagram.com/rafael.menegon/">
+                        <img src="images/instagram.svg"></img>
+                    </a>
+                </li>
+                <li class="link-rede">
+                    <a href="https://www.linkedin.com/in/rafael-menegon/">
+                        <img src="images/linkedin.svg"></img>
+                    </a>
+                </li>
+                <li class="link-rede">
+                    <a href="https://medium.com/@dev.rafaelmenegon">
+                        <img src="images/medium.svg"></img>
+                    </a>
+                </li>
+                <li class="link-rede">
+                    <a href="https://github.com/c0bal">
+                        <img src="images/github.svg"></img>
+                    </a>
+                </li>
             </ul>
-        </footer>
-    </div>
+
+        </footer><!--/footer-->
+
+    </div><!--/root-->
+
+    <!-- loader
+    ================================================== -->
+    <div class="loader">
+        
+        <!-- caneca de café -->
+        <svg 
+            class="coffe" 
+            width="37" 
+            height="48" 
+            viewbox="0 0 37 48" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg">
+
+            <!-- caneca -->
+            <path
+                d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+                stroke="var(--secondary)" 
+                stroke-width="2">
+            </path>
+
+            <!-- alça da caneca -->
+            <path
+                d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+                stroke="var(--secondary)" 
+                stroke-width="2">
+            </path>
+
+            <!-- saquinho de chá -->
+            <!-- <path 
+                id="coffebag" 
+                fill="var(--secondary)" 
+                fill-rule="evenodd" 
+                clip-rule="evenodd"
+                d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+            </path> -->
+
+            <!-- vapor da esquerda -->
+            <path 
+                id="steamL" 
+                d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" 
+                stroke-width="2" 
+                stroke-linecap="round"
+                stroke-linejoin="round" 
+                stroke="var(--secondary)">
+            </path>
+
+            <!-- vapor da direita -->
+            <path 
+                id="steamR" 
+                d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" 
+                stroke="var(--secondary)"
+                stroke-width="2" 
+                stroke-linecap="round" 
+                stroke-linejoin="round">
+            </path>
+
+        </svg><!-- /caneca de café -->
+
+    </div><!--/loader-->
 
     <script src="navbar.js"></script>
+    <script src="loader.js"></script>
 </body>
+
 </html>

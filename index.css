@@ -28,6 +28,7 @@
  * =================================================================== 
  */
 
+
 /** 
  * ===================================================================
  * 01. webfonts and iconfonts
@@ -35,6 +36,7 @@
  * ------------------------------------------------------------------- 
  */
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 
 /** 
 * ===================================================================
@@ -77,9 +79,20 @@ html, body {
 }
 
 body {
+    display: block;
     font-family: Montserrat, sans-serif;
     color: #ffffff;
     background-color: #000F21;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: #FF6565;
+    font-size: 2.25rem;
+    font-weight: 700;
 }
 
 ::-webkit-scrollbar-track {
@@ -96,18 +109,15 @@ body {
 }
 
 .root {
-    /* width: 988px; */
     margin: 0 auto;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
 }
 
-span {
-    font-size: 1.5rem;
-}
-
-h2 {
-    color: #FF6565;
-    font-size: 2.25rem;
-    font-weight: 700;
+.container {
+    width: 100%;
+    height: 100%;
 }
 
 .mobile {
@@ -251,6 +261,7 @@ h2 {
 
 #apresentacao-img {
     vertical-align: center;
+    animation: fadein 3s;
 }
 
 #apresentacao-img > img{
@@ -311,16 +322,14 @@ h2 {
  * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1440px) {
-
+    #apresentacao-info > h1 {
+        white-space: normal;
+    }
 }
 
 @media only screen and (max-width:1024px) {
     #apresentacao-info {
         margin-top: 0rem;
-    }
-
-    #apresentacao-info > h1 {
-        white-space: normal;
     }
 }
 
@@ -427,6 +436,7 @@ h2 {
     display: grid;
     background-color: #0D1B2C;
     padding: 2.5rem 2rem 1.5rem 1.5rem;
+    align-items: baseline;
 }
 
 #servicos-cards > .card > img {
@@ -662,6 +672,7 @@ h2 {
 
 #portfolio-projetos {
     max-width: 100%;
+    height: 100%;
     align-self: center;
     padding: 7.5rem 0;
     display: grid;
@@ -670,6 +681,7 @@ h2 {
 }
 
 #portfolio-projetos > .projeto {
+    display: flex;
     cursor: pointer;
     overflow: hidden;
 }
@@ -679,8 +691,19 @@ h2 {
    transition: 0.5s;
 }
 
+#portfolio-projetos > .projeto:hover img{
+    -webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+ }
+
 #portfolio-projetos > .projeto img {
     max-width: 100%;
+    -moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 /**
@@ -836,7 +859,7 @@ h2 {
 
 @media (max-width: 1440px) {  
     .container {
-        padding: 0 6.25rem;
+        padding: 0 14.125rem;
     }
 }
 
@@ -856,6 +879,14 @@ h2 {
     .container {
         padding: 0 1.563rem;
     }
+}
+
+
+/* animations */
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
 }
 
 
